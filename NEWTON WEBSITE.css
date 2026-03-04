@@ -1,0 +1,146 @@
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(https://newtonssc29.github.io/mountain.jpg);
+        background-size: cover;
+    }
+    h1 {
+        font-family: "Lavishly Yours";
+        font-size: 130px;
+        line-height: 0px;
+        position: absolute;
+        top: 10%;
+        font-style: italic;
+    }
+    h3 {
+        font-size: 100px;
+        font-family: "Monsieur La Doulaise";
+        position: absolute;
+        top: 14%;
+        right: 40%;
+    }
+    .title {
+        display: flex;
+        align-items:flex-end;
+        justify-content:flex-end;
+        text-indent: -25%;
+        background-image: url(https://newtonssc29.github.io/mountain.jpg) no-repeat center center/cover;
+        background-size: cover;
+    }
+    section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    section .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background: url(https://newtonssc29.github.io/pngwing.com.png) repeat-x;
+        background-size: 1000px 300px;   
+    }
+    section .wave.wave1 {
+        animation: wave1 30s linear infinite;
+        position: absolute;
+        z-index: 6;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+    @keyframes wave1 {
+        0% {background-position-x: 0;}
+        100% {background-position-x: 1000px;}
+    }
+    section .wave.wave2 {
+        animation: wave2 15s linear infinite;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.5;
+        animation-delay: -5s;
+        bottom: 10px;
+    }
+    @keyframes wave2 {
+        0% {background-position-x: 0;}
+        100% {background-position-x: 1000px;}
+    }
+    section .wave.wave3 {
+        animation: wave3 30s linear infinite;
+        position: absolute;
+        z-index: 2;
+        opacity: 0.2;
+        animation-delay: -2s;
+        bottom: 15px;
+    }
+    @keyframes wave3 {
+        0% {background-position-x: 0;}
+        100% {background-position-x: 1000px;}
+    }
+    section .wave.wave4 {
+        animation: wave4 15s linear infinite;
+        position: absolute;
+        z-index: 3;
+        opacity: 0.7;
+        animation-delay: -10s;
+        bottom: 30px;
+    }
+    @keyframes wave4 {
+        0% {background-position-x: 0;}
+        100% {background-position-x: 1000px;}
+    }
+    
+    .boat {
+width: 800px;
+height: 600px;
+position: absolute;
+bottom: 50px;
+left: 50%;
+transform: translateX(-50%);
+z-index: 5;
+}
+
+.boat img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+animation: float 4s ease-in-out infinite;
+z-index: 4;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateX(-50%) rotateX(15deg) rotateY(-17deg) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) rotateX(17deg) rotateY(-15deg) translateY(-15px);
+  }
+}
+
+ .nav {
+    margin: 20px 0;
+    padding: 30px 30px;
+}
+
+.nav a {
+    box-shadow: 3px 3px 10px rgb(253, 255, 208);
+    background-color: rgb(75, 219, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    
+    /* Smooth animation for lifting */
+    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+
+.nav a:hover {
+    color: rgb(255, 255, 255);
+    transform: translateY(-8px);
+    box-shadow: 6px 6px 15px rgb(240, 253, 123);
+    padding: 17px 31px;
+}

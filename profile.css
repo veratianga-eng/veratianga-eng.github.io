@@ -1,0 +1,144 @@
+
+body {
+background: url("https://newtonssc29.github.io/PFP Bg.jpg");
+background-size:auto;
+}
+.row {
+  display: flex;
+  justify-content: left;  
+  align-items: flex-start;  
+  gap: 20px;                
+  flex-wrap: wrap;  
+  
+}
+.student {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 260px;
+}
+
+.PFP-container {
+background: white;
+width: 300px;
+height: 380px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.PFP-container img {
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 250px;
+    height: 300px;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.PFP-container text {
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+.PFP-container img text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+.PFP-container h3 {
+    line-height: 0.5;
+    margin: 0;
+}
+    .title {
+        font-family: "Lavishly Yours";
+        font-size: 75px;
+        line-height: 0px;
+        border: 50px solid;
+        border-image-source: url("https://newtonssc29.github.io/border2.png");
+        border-image-slice: 216 0 233 0 fill;
+        border-image-width: 100px 1px 100px 1px;
+        border-image-outset: 0px 0px 0px 0px;
+        border-image-repeat: stretch stretch;
+    }
+    h1 {
+        text-indent: 50px;
+        font-style: italic;
+    }
+    h2 {
+        font-family: "Monsieur La Doulaise";
+        font-style: italic;
+    }
+    .carousel {
+        margin: 20px auto;
+        width: 93%;
+        display: flex;
+        overflow-x: auto;
+        gap: 0px;
+        opacity: 99.67%;
+        mask-image: linear-gradient(to left, black 90%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to left, black 90%, transparent 100%);
+    }
+    .carousel::-webkit-scrollbar {
+        display: none;  
+    }
+    .group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        animation: spin 10s linear infinite;
+    }
+    .carousel img {
+        height: 200px;
+        width: 240px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #888888;
+    }
+    .card {
+        flex: 0 0 auto;
+        height: 200px;  
+        padding: 10px;
+        border-radius: 10px;
+        align-content: center;
+    }
+    @keyframes spin {
+        from {translate:0;}
+        to {translate:-100%;}
+    }
+
+    .nav {
+    margin: 20px 0;
+    padding: 30px 30px;
+}
+
+.nav a {
+    box-shadow: 3px 3px 10px silver;
+    background-color: black;
+    color: silver;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    
+    /* Smooth animation for lifting */
+    transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+
+.nav a:hover {
+    color: gold;
+    transform: translateY(-8px);
+    box-shadow: 6px 6px 15px silver;
+    padding: 17px 31px;
+}
