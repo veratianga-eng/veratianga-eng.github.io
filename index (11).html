@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+
+.nav {
+    margin: 20px 0;
+    }
+
+.nav a {
+    display: inline-block;
+    box-shadow: 3px 3px 10px silver;
+    background-color: Blue;
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: transform 0.5s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+
+.nav a:hover {
+    color: yellow;
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 15px silver;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* This creates a 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Index | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <header><h1>Welcome to My Website</h1></header>
+    <div class="nav">
+    <a href="profile.html">PROFILE</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="hobby.html">HOBBY</a>
+</div>
+    </center>
+<hr>
+
+    <div class="container">
+        <center>
+        <div class="video-responsive">
+    <iframe src="https://www.youtube.com/embed/aSV2zd-qch0?si=VfHjGHLVzn7YTTh1" allowfullscreen></iframe>
+</div>
+
+<h1> Diamond Gym </h1>
+        </center>
+        
+    </div>
+</body>
+</html>

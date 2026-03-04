@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+
+body {
+    margin: 0;
+    background-image: url("tomato.jpeg");
+    font-family: 'Poppins', sans-serif; 
+    color: #4a1c1c;
+}
+
+nav {
+    background-color: #0B6623; 
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #EC2D01; 
+}
+
+/* HEADERS */
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #096900;
+    margin-top: 30px;
+}
+
+/* CARD STYLE */
+.card {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(214,40,40,0.2);
+    text-align: center;
+}
+
+/* BUTTON */
+.btn {
+    background-color: #d62828;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #9e1b1b;
+}
+
+/* GALLERY GRID */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: auto;
+    height: auto;
+    background-color: #0B6623;
+    color: white;
+    margin-top: 40px;
+}
+
+</style>
+
+<html>
+<head>
+
+    <title>Nelly's Garden</title>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="hobbies.html">Hobbies</a>
+</nav>
+
+<h1>Welcome to Nelly's Garden!</h1>
+
+<div class="card">
+    <p>Press "Profile" to get to know me!</p>
+    <p>Press "Gallery" to view my memories!</p>
+    <p>Press "Hobbies" to know what I like to do!</p>
+    <p>Press "Back to Section website" below to view my classmates!</p>
+
+    <a href="profile.html" class="btn">Back to Section website</a>
+</div>
+
+<footer>
+    
+</footer>
+
+</body>
+</html>
+
